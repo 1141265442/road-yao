@@ -1,8 +1,9 @@
-package com.xlwang.controller;
+package com.xlwang.modular.controller;
 
 
-import com.xlwang.entity.SysUser;
-import com.xlwang.service.ISysUserService;
+import com.xlwang.core.constanet.ConstantFactory;
+import com.xlwang.modular.entity.SysUser;
+import com.xlwang.modular.service.ISysUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +31,8 @@ public class SysUserController {
     @RequestMapping
     public Object getList(){
         log.info("查询用户");
-        return iSysUserService.selectAll();
+        //return iSysUserService.selectAll();
+       return ConstantFactory.me().selectAllUser();
     }
 
     @RequestMapping("/add")

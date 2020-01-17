@@ -1,8 +1,8 @@
-package com.xlwang.service.impl;
+package com.xlwang.modular.service.impl;
 
-import com.xlwang.entity.SysUser;
-import com.xlwang.mapper.SysUserMapper;
-import com.xlwang.service.ISysUserService;
+import com.xlwang.modular.entity.SysUser;
+import com.xlwang.modular.mapper.SysUserMapper;
+import com.xlwang.modular.service.ISysUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

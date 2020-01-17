@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 @Configuration
-@MapperScan("com.xlwang.mapper")
+@MapperScan("com.xlwang.modular.mapper")
 public class MybatisPlusConfig {
     @Bean("mybatisSqlSession")
     public SqlSessionFactory sqlSessionFactory(@Qualifier("dataSource") DataSource dataSource) throws Exception {

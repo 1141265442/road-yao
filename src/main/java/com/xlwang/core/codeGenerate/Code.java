@@ -1,4 +1,4 @@
-package com.xlwang.codeGenerate;
+package com.xlwang.core.codeGenerate;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

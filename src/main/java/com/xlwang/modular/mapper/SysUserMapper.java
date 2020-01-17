@@ -1,8 +1,7 @@
-package com.xlwang.mapper;
+package com.xlwang.modular.mapper;
 
-import com.xlwang.entity.SysUser;
+import com.xlwang.modular.entity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 import java.util.Map;

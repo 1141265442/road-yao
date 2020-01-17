@@ -1,6 +1,6 @@
-package com.xlwang.service;
+package com.xlwang.modular.service;
 
-import com.xlwang.entity.SysUser;
+import com.xlwang.modular.entity.SysUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
