@@ -1,7 +1,8 @@
-package com.xlwang.core.constanet;
+package com.xlwang.core.constant;
 
 import com.xlwang.core.util.SpringContextHolder;
-import com.xlwang.modular.mapper.SysUserMapper;
+import com.xlwang.modular.entity.User;
+import com.xlwang.modular.mapper.UserMapper;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
@@ -11,13 +12,13 @@ import java.util.Map;
 @Component
 @DependsOn("springContextHolder")
 public class ConstantFactory {
-    private SysUserMapper userMapper = SpringContextHolder.getBean(SysUserMapper.class);
+    private UserMapper userMapper = SpringContextHolder.getBean(UserMapper.class);
 
     public static ConstantFactory me() {
         return SpringContextHolder.getBean("constantFactory");
     }
 
-    public List<Map> selectAllUser(){
-        return userMapper.selectAll();
+    public List<User> selectAllUser(){
+        return userMapper.selectList(null);
     }
 }
