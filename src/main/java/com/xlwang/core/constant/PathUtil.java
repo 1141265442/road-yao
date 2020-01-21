@@ -23,7 +23,7 @@ public class PathUtil {
         } catch (FileNotFoundException e) {
             System.err.println("获取路径失败，");
         }
-        File uploadDir = new File(classDir1,"static/images/upload/");//classpath下的static,重启tomcat后消失
+        File uploadDir = new File(classDir1, "src/main/webapp/static/images/upload/");//classpath下的static,重启tomcat后消失
         //项目路径下新建static，和src同级，可永久保存。拒绝访问
         //File uploadDir = new File("static/images/upload/");
         if(!uploadDir.exists()) uploadDir.mkdirs();
