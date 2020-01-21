@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xlwang.modular.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xlwang.modular.entity.User">
+        <id column="id" property="id" />
+        <result column="avatar" property="avatar" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="salt" property="salt" />
+        <result column="name" property="name" />
+        <result column="birthday" property="birthday" />
+        <result column="sex" property="sex" />
+        <result column="email" property="email" />
+        <result column="phone" property="phone" />
+        <result column="roleid" property="roleid" />
+        <result column="deptid" property="deptid" />
+        <result column="status" property="status" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="createtime" property="createtime" />
+        <result column="last_modify_time" property="lastModifyTime" />
+        <result column="last_login_ip" property="lastLoginIp" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, avatar, username, password, salt, name, birthday, sex, email, phone, roleid, deptid, status, create_user_id, createtime, last_modify_time, last_login_ip, version
+    </sql>
+
+</mapper>
